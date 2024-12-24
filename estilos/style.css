@@ -11,15 +11,14 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
 }
 
 body {
-    /* height: 100vh; */
     box-sizing: border-box;
     background-color: var(--cor-fundo);
-    color: var(--cor-letras);   
+    color: var(--cor-letras); 
 }
 
 .cabecalho {
@@ -115,20 +114,20 @@ body {
     font-size: 2rem;
 }
 
-.rodape {
-    display: flex;
-    background-color: var(--cor-strong);
+.rodape{
     color: var(--cor-botoes);
-    padding: 20px;
-    justify-content: space-between;
+    background-color: var(--cor-strong);
+    padding: 24px;
     font-family: var(--fonte-secundaria);
-    font-weight: 400; /* grossura da fonte */
+    font-size: 1.5rem;
+    font-weight: 400;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .rodape__texto {
     background-color: var(--cor-strong);
     color: var(--cor-botoes);
-    text-align: center;
     font-family: var(--fonte-secundaria);
     font-weight: 400; /* grossura da fonte */
 }
