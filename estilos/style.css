@@ -28,6 +28,8 @@ body {
 .cabecalho__menu {
     display: flex;
     gap: 80px; /* espaço entre os elementos */
+    overflow-x: auto; /* Permite rolagem horizontal */
+    white-space: nowrap; /* Impede que os links quebrem de linha */
 }
 
 .cabecalho__menu__link {
@@ -134,12 +136,17 @@ body {
 
 @media (max-width: 1200px) {
     .cabecalho {
-        padding: 10%;
+        padding: 5%;
     }
     
     .cabecalho__menu {
         justify-content: center; /* alinhamento dos itens na classe */
+        -ms-overflow-style: none; /* Remove barra de rolagem no IE e Edge */
+        scrollbar-width: none; /* Remove barra de rolagem no Firefox */
+    }
 
+    .cabecalho__menu::-webkit-scrollbar {
+        display: none; /* Remove barra de rolagem no Chrome, Safari e outros WebKit */
     }
 
     .capa {
